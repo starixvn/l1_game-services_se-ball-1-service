@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://gn_game_api_uat:5000",
-        authUrl: "http://gn_auth_api_uat:5000",
+        apiUrl: "http://sp-hd-game-api-uat-service:5000",
+        authUrl: "http://sp-hd-auth-api-uat-service:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -22,7 +22,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.53:39420,10.99.99.54:39420,10.99.99.188:39420,10.99.99.187:39420/?replicaSet=SN-UAT&appName=SeBall1",
+        url: "mongodb://hotdog_backend:HotdogBackend%4022027@10.146.34.28:39520/?replicaSet=SP-UAT&appName=SeBall1",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -36,7 +36,7 @@ export default {
         env: "UAT",
     },
     authenticateSettings: {
-        url: "http://gn_auth_api_uat:5000",
+        url: "http://sp-hd-auth-api-uat-service:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -44,7 +44,7 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://gn_user_service_uat:5000",
+        url: "http://sp-hd-user-service-uat-service:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     metrics: {
@@ -53,7 +53,7 @@ export default {
     },
     enableMsgpackParser: true,
     gameManagementApiSettings: {
-        BASE: "http://gn_game_management_service_uat:5000",
+        BASE: "http://sp-hd-game-management-service-uat-service:5000",
     },
     disableCors: false,
 };
