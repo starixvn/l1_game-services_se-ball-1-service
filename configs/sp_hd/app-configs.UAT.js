@@ -24,7 +24,7 @@ export default {
     database: {
         url: "mongodb://hotdog_backend:HotdogBackend%4022027@10.146.34.28:39520/?replicaSet=SP-UAT&appName=SeBall1",
         options: {
-            dbName: "minigame",
+            dbName: "hotdog_minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
             auto_reconnect: true,
